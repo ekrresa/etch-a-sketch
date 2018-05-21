@@ -20,6 +20,38 @@ h1 {
 	text-align: center
 }
 
+button {
+	position: absolute;
+    top: 40%;
+    left: 20%;
+    width: 90px;
+    height: 45px;
+    border-radius: 5px;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+.gridsize {
+	position: absolute;
+    top: 33%;
+    right: 20%;
+    width: 118px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 8px;
+}
+
+.gridsize h4 {
+    margin-bottom: 4px;
+}
+
+.gridsize input {
+	width: 80px;
+    height: 25px;
+    border-radius: 3px;
+    text-align: inherit;
+}
+
 .container {
 	width: 500px;
     height: 500px;
