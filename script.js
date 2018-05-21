@@ -1,12 +1,27 @@
 let reset = document.querySelector('button');
+let gridsize = document.querySelector('input');
+let container = document.querySelector(".container");
+
+// loads grid with 20x20 divs
+window.addEventListener("load", createGrid(20));
+
+// user enters choice of grid size
+gridsize.addEventListener('keydown', function (e) {
+	if (e.keyCode === 13) {
+		container.innerHTML = "";
+		createGrid(gridsize.value);
+	}
+
+});
+
+// reloads the page
 reset.addEventListener('click', function () {
 	window.location.reload();
-})
+});
 
-window.addEventListener("load", createGrid);
-
-function createGrid() {
-	var divsPerSide = 20;
+// Creates the grid
+function createGrid(arg) {
+	var divsPerSide = arg;
 	var divNum = divsPerSide * divsPerSide;
 	var divSize = 500/divsPerSide;
 
@@ -17,11 +32,11 @@ function createGrid() {
         div.style.width = divSize + 'px';
     	div.addEventListener("mouseover", generateColor);
 
-
-        document.querySelector(".container").appendChild(div);
+		container.appendChild(div);
 	}
 }
 
+// generates random colors
 function generateColor() {
 	var letters = '0123456789ABCDEF'.split('');
 	var color = '#';
