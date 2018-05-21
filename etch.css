@@ -13,6 +13,7 @@ body {
 	width: 500px;
     height: 500px;
     border: 1px solid blue;
+    border-radius: 4px;
     margin: auto;
     padding: 0;
     font-size: 0;
