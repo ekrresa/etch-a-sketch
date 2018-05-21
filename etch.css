@@ -23,6 +23,7 @@ body {
 	margin: 0;
 	padding: 0;
 	border: none;
-	background-color: darkslategray;
+	background-color: #dfe8e8;
+/*	opacity: .10;*/
 	display: inline-block;
 }
