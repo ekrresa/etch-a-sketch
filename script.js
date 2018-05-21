@@ -8,12 +8,13 @@ function createGrid() {
 	var divSize = 500/divsPerSide;
 
 	for (var i = 0; i < divNum; i++) {
-        var div = document.createElement("div");
+		var div = document.createElement("div");
         div.className = 'square';
         div.style.height = divSize + 'px';
         div.style.width = divSize + 'px';
-        div.style.background = generateColor();
-        div.addEventListener("mouseover", black);
+    	div.addEventListener("mouseover", black);
+
+
         document.querySelector(".container").appendChild(div);
 	}
 }
@@ -28,6 +29,7 @@ function generateColor() {
 }
 
 function black () {
+	this.style.cursor = 'pointer';
 	this.style.background = 'black';
 }
 
