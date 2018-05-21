@@ -1,6 +1,9 @@
+let reset = document.querySelector('button');
+reset.addEventListener('click', function () {
+	window.location.reload();
+})
+
 window.addEventListener("load", createGrid);
-
-
 
 function createGrid() {
 	var divsPerSide = 20;
