@@ -1,8 +1,12 @@
+html {
+	height: 100%;
+}
+
 body {
 	display: flex;
 	margin: 0;
 	padding: 0;
-	height: -webkit-fill-available;
+	min-height: 100%;
 }
 
 .container {
